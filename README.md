@@ -69,12 +69,12 @@ Market regimes often exhibit persistence, meaning once the market enters a regim
 
      notebooks/ – Exploratory analysis and development notebooks
 
-     src/ – Core Python modules
-            hmm_model.py – Custom HMM implementation
-            feature_engineering.py – Feature extraction and preprocessing
-            visualization.py – Plotting and graphical output functions
-            validation.py – Market event correlation validation functions
-            persistence.py – Regime persistence analysis utilities
+     src/ – Core Python modules: 
+            hmm_model.py – Custom HMM implementation
+	    feature_engineering.py – Feature extraction and preprocessing
+            visualization.py – Plotting and graphical output functions
+	    validation.py – Market event correlation validation functions
+            persistence.py – Regime persistence analysis utilities
   
      results/ – Generated plots and reports
 
@@ -105,9 +105,9 @@ Market regimes often exhibit persistence, meaning once the market enters a regim
            Generated plots and analysis will be saved in the results/ directory.
 
 ## Results
-       •	Successfully detected 3 distinct market regimes correlated with historical VIX spikes.
-	•	Statistical validation confirmed significant correlation between detected regimes and extreme market events (p < 0.05).
-	•	Persistence analysis revealed stability patterns, aiding regime-based strategy design.
+        • Successfully detected 3 distinct market regimes correlated with historical VIX spikes.
+	• Statistical validation confirmed significant correlation between detected regimes and extreme market events (p < 0.05).
+	• Persistence analysis revealed stability patterns, aiding regime-based strategy design.
  
 ## Methodology
 	1.	Data Loading & Preprocessing: OHLCV data → feature computation (returns, volatility,    range).
