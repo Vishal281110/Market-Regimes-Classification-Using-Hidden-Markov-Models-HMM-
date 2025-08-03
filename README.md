@@ -65,17 +65,21 @@ The Market Event Correlation Validator serves as a crucial validation mechanism 
 Market regimes often exhibit persistence, meaning once the market enters a regime (e.g., bull, bear, high-volatility), it tends to remain in that regime for some duration. Regime persistence analysis quantifies how long regimes last, how consistent their durations are, and how stable they are relative to transition dynamics.
 
 ## Project Structure
-data/ – Raw and processed INDIA VIX OHLCV data
-notebooks/ – Exploratory analysis and development notebooks
-src/ – Core Python modules
-  hmm_model.py – Custom HMM implementation
-  feature_engineering.py – Feature extraction and preprocessing
-  visualization.py – Plotting and graphical output functions
-  validation.py – Market event correlation validation functions
-  persistence.py – Regime persistence analysis utilities
-results/ – Generated plots and reports
-requirements.txt – Python dependencies
-README.md – Project documentation
+     data/ – Raw and processed INDIA VIX OHLCV data
+
+     notebooks/ – Exploratory analysis and development notebooks
+
+     src/ – Core Python modules
+            hmm_model.py – Custom HMM implementation
+            feature_engineering.py – Feature extraction and preprocessing
+            visualization.py – Plotting and graphical output functions
+            validation.py – Market event correlation validation functions
+            persistence.py – Regime persistence analysis utilities
+  
+     results/ – Generated plots and reports
+
+     requirements.txt – Python dependencies
+     README.md – Project documentation
 
 ## Tech Stack
 	•	Programming Language: Python 3.12
@@ -84,20 +88,24 @@ README.md – Project documentation
 	•	Visualization: Matplotlib, Seaborn
  
 ## Usage Instructions
-  1.	Clone Repository
-git clone https://github.com/your-repo-link.git
-cd your-repo-link
-	2.	Install Dependencies
-pip install -r requirements.txt
-	3.	Prepare Data
-Place INDIA VIX_60minute.csv in the data/ directory.
-	4.	Run Pipeline
-python src/hmm_model.py
-	5.	View Results
-Generated plots and analysis will be saved in the results/ directory.
+        1. Clone Repository
+        git clone https://github.com/Vishal281110/Market-Regimes-Classification-Using-Hidden-Markov-Models-HMM-.git
+	cd (https://github.com/Vishal281110/Market-Regimes-Classification-Using-Hidden-Markov-Models-HMM-.git)
+
+	2. Install Dependencies
+           pip install -r requirements.txt
+
+	3. Prepare Data
+           Place INDIA VIX_60minute.csv in the data/ directory.
+	   
+	4. Run Pipeline
+           python src/hmm_model.py
+	   
+	5. View Results
+           Generated plots and analysis will be saved in the results/ directory.
 
 ## Results
-  •	Successfully detected 3 distinct market regimes correlated with historical VIX spikes.
+       •	Successfully detected 3 distinct market regimes correlated with historical VIX spikes.
 	•	Statistical validation confirmed significant correlation between detected regimes and extreme market events (p < 0.05).
 	•	Persistence analysis revealed stability patterns, aiding regime-based strategy design.
  
@@ -110,33 +118,27 @@ Generated plots and analysis will be saved in the results/ directory.
 	6.	Visualization & Anomaly Detection: Regime-colored price charts with uncertainty flags.
  
 ## Project Timeline
-• Week 1:
-Learn the basics of HMMs and market regimes (bull, bear, sideways).
-Review related projects and papers.
-Set up tools: Git, Python, hmmlearn, pandas, numpy..
-• Week 2:
-Gather historical time series data (stocks, indices, volatility).
-Clean data, handle missing values, and align timeframes.
-Perform basic exploratory data analysis (EDA).
-• Week 3:
-Create features like log returns, moving averages, RSI, MACD.
-Normalize and visualize feature patterns.
-Document feature selection choices.
-• Week 4:
-Train unsupervised HMM using hmmlearn. Test different hidden states. Plot hid-
-den states as regimes over time.
-• Week 5:
-Visualize transitions, regime durations, and probabilities. Compare results with
-known market events.
-• Week 6:
-Develop simple regime-specific trading strategies. Backtest and evaluate using
-Sharpe ratio, returns, and drawdown.
-• Week 7:
-Use Viterbi decoding or filtering for forward regime prediction. Validate using
-rolling windows and tune hyperparameters
-• Week 8:
-Polish code and results. Prepare Jupyter notebooks, documentation, and a demo
-presentation.
+     • Week 1: Learn the basics of HMMs and market regimes (bull, bear, sideways).
+               Review related projects and papers.
+               Set up tools: Git, Python, hmmlearn, pandas, numpy.
+	       
+     • Week 2: Gather historical time series data (stocks, indices, volatility).
+               Clean data, handle missing values, and align timeframes.
+               Perform basic exploratory data analysis (EDA).
+	       
+     • Week 3: Create features like log returns, moving averages, RSI, MACD.
+               Normalize and visualize feature patterns.
+               Document feature selection choices.
+	       
+     • Week 4: Train unsupervised HMM using hmmlearn. Test different hidden states. Plot hidden states as regimes over time.
+     
+     • Week 5: Visualize transitions, regime durations, and probabilities. Compare results with known market events.
+     
+     • Week 6: Develop simple regime-specific trading strategies. Backtest and evaluate using Sharpe ratio, returns, and drawdown.
+     
+     • Week 7: Use Viterbi decoding or filtering for forward regime prediction. Validate using rolling windows and tune hyperparameters.
+     
+     • Week 8: Polish code and results. Prepare Jupyter notebooks, documentation, and a demo presentation.
 
 ## License
 
